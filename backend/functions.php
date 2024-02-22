@@ -2,7 +2,7 @@
 session_start();
 date_default_timezone_set('Asia/Jakarta');
 
-const BASE_URL      = "https://verification.e-meterai.live";
+const BASE_URL      = "https://verification.e-meterai.live/";
 
 
 function curl_post_blob($url, $params, $filesize)
