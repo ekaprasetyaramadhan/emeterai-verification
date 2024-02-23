@@ -3,6 +3,7 @@ session_start();
 date_default_timezone_set('Asia/Jakarta');
 
 const BASE_URL      = "https://verification.e-meterai.live/";
+// const BASE_URL      = "http://localhost/emeterai-verification/";
 
 
 function curl_post_blob($url, $params, $filesize)
@@ -34,4 +35,17 @@ function curl_post_blob($url, $params, $filesize)
         $response    = json_decode($resp);
         return $response;
     }
+}
+
+function formatBytes($bytes, $precision = 2)
+{
+    $units = array('Bytes', 'KB', 'MB', 'GB', 'TB');
+
+    $bytes = intval($bytes);
+    $bytes = max($bytes, 0);
+    $pow = floor(($bytes ? log($bytes) : 0) / log(1024));
+    $pow = min($pow, count($units) - 1);
+    $bytes /= pow(1024, $pow);
+
+    return round($bytes, $precision) . ' ' . $units[$pow];
 }
