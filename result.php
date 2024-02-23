@@ -181,7 +181,7 @@ $SNValid = ['632184541438662478458946134058747031673774297695', '618651507932800
                                                                         <div class="col-12 col-md-6">
                                                                             <small>Serial</small>
                                                                             <?php if ($serialNumberCertificateInfo) : ?>
-                                                                                <p><?php echo gmp_strval($certificateInfo->serialNumber, 16) ?></p>
+                                                                                <p><?php echo strtoupper(gmp_strval($certificateInfo->serialNumber, 16)) ?></p>
                                                                             <?php else : ?>
                                                                                 <p><?php echo $certificateInfo->serialNumber ?></p>
                                                                             <?php endif; ?>
@@ -226,7 +226,7 @@ $SNValid = ['632184541438662478458946134058747031673774297695', '618651507932800
                                                                     <div class="col-12 col-md-6">
                                                                         <small>Serial</small>
                                                                         <?php if ($serialNumberIsNumeric) : ?>
-                                                                            <p><?php echo gmp_strval($signer->serialNumber, 16) ?></p>
+                                                                            <p><?php echo strtoupper(gmp_strval($signer->serialNumber, 16)) ?></p>
                                                                         <?php else : ?>
                                                                             <p><?php echo $signer->serialNumber ?></p>
                                                                         <?php endif; ?>
