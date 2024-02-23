@@ -130,7 +130,7 @@ $SNValid = ['632184541438662478458946134058747031673774297695', '618651507932800
                                             </h5>
                                         </div>
                                         <div id="collapse<?php echo $i; ?>" class="collapse <?php echo $i == 1 ? 'show' : '' ?>" aria-labelledby="heading<?php echo $i; ?>" data-parent="#accordion">
-                                            <div class="card-body" style="font-size:11px ;">
+                                            <div class="card-body" style="font-size:10px ;">
                                                 <?php if ($isMeterai == true) : ?>
 
                                                     <div class="row">
@@ -290,7 +290,7 @@ $SNValid = ['632184541438662478458946134058747031673774297695', '618651507932800
                         </button>
                     </div>
                     <div class="card-body">
-                        <iframe src="viewer" frameborder="0" height="400px" width="100%"></iframe>
+                        <iframe src="viewer" frameborder="0" height="600px" width="100%"></iframe>
                     </div>
                 </div>
             </div>
