@@ -1,5 +1,6 @@
 <?php
 include 'backend/functions.php';
+$_SESSION['dokumen'] = null;
 ?>
 <!DOCTYPE html>
 <html lang="en">

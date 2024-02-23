@@ -1,5 +1,11 @@
 <?php
 include 'backend/functions.php';
+
+if (!isset($_SESSION['dokumen']) or !is_array($_SESSION['dokumen'])) :
+    header('location: ' . BASE_URL . 'index');
+    die();
+endif;
+
 $data = $_SESSION['signatureVerification']['data']['signer'];
 $SNValid = ['632184541438662478458946134058747031673774297695', '6186515079328007405'];
 ?>
